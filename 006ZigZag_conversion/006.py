@@ -54,6 +54,8 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
+        if numRows == 1:
+            return s
         res = []
         s_len = len(s)
         period_items = (numRows-1)*2  # 一个周期所包含的元素个数
