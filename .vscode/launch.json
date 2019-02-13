@@ -4,12 +4,16 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        { 
-            "name": "(gdb) Attach",
+        {
+            "name": "(gdb) Launch",
             "type": "cppdbg",
-            "request": "attach",
-            "program": "${workspaceFolder}/006ZigZag_conversion/a.out",
-            "processId": "${command:pickProcess}",
+            "request": "launch",
+            "program": "/home/cuckoo/leetcode/TREE/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -19,50 +23,24 @@
                 }
             ]
         },
-    {
-        "name": "(gdb) Launch",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/006ZigZag_conversion/a.out",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": true,
-        "MIMode": "gdb",
-        "setupCommands": [
-            {
-                "description": "Enable pretty-printing for gdb",
-                "text": "-enable-pretty-printing",
-                "ignoreFailures": true
-            }
-        ]
-    },
         {
-            "name": "Python: Terminal (integrated)",
-            "type": "python",
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        // {
-        //     "name": "(gdb) Launch",
-        //     "type": "cppdbg",
-        //     "request": "launch",
-        //     "program": "/home/cuckoo/leetcode/001twoSum/a.out",
-        //     "args": [],
-        //     "stopAtEntry": false,
-        //     "cwd": "${workspaceFolder}",
-        //     "environment": [],
-        //     "externalConsole": true,
-        //     "MIMode": "gdb",
-        //     "setupCommands": [
-        //         {
-        //             "description": "Enable pretty-printing for gdb",
-        //             "text": "-enable-pretty-printing",
-        //             "ignoreFailures": true
-        //         }
-        //     ]
-        // }
+            "program": "${workspaceFolder}/TREE/binary",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
     ]
 }
